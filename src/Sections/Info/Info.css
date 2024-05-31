@@ -1,0 +1,38 @@
+.Info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 110px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.Info-img {
+    position: absolute;
+    z-index: -5;
+    width: 1480px;
+    height: 897px;
+    left: -670px;
+}
+
+.Info-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 890px;
+    margin-left: auto;
+}
+
+.Info-h1 {
+    width: 445px;
+}
+
+.Info-h2 {
+    width: 890px;
+}
+
+.Info-p {
+    color: white;
+    font-size: 30px;
+    width: 827px;
+}

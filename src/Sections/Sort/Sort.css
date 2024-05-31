@@ -1,0 +1,23 @@
+.Sort {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 120px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.Sort-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 0;   /* Расстояние между колонками */
+}
+
+/* .be {
+    width: calc(100% / 3 - 20px);
+} */
+
+.Sort-btn {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,43 @@
+.Photos {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    margin-left: 70px;
+    margin-right: 70px;
+    gap: 0px;
+}
+
+.Photo {
+    width: 100%;
+}
+
+/* .Photo1 {
+    width: 700px;
+    height: 894px;
+}
+
+.Photo2 {
+    width: 500px;
+    height: 442px;
+}
+
+.Photo3 {
+    width: 560px;
+    height: 442px;
+}
+
+.Photo4 {
+    position: absolute;
+    right: 50px;
+    width: 700px;
+    height: 442px;
+}
+
+.Photo5 {
+    position: absolute;
+    top: 4px;
+    right: 50px;
+    width: 667px;
+    height: 442px;
+} */

@@ -1,0 +1,27 @@
+
+
+
+.PlusCard {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 30px;
+    height: 320px;
+    width: 870px;
+    background-color: #0F0F0F;
+    gap: 40px;
+}
+
+.PlusCard-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.PlusCard-p {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}

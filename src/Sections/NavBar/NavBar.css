@@ -1,0 +1,30 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 70px;
+    gap: 70px;
+    z-index: 10;
+}
+
+.navbar-menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.navbar-menu-links {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.navbar-logo {
+    width: 303px;
+    height: 43px;
+}

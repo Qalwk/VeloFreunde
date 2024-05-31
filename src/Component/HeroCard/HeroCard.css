@@ -1,0 +1,30 @@
+.HeroCard {
+    width: 890px;
+    height: 980px;
+}
+
+.HeroCard-back {
+
+}
+
+.HeroCard-btn {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.HeroCard-title{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    bottom: 120px;
+    left: 415px;
+}
+
+.HeroCard-title-text {
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+}

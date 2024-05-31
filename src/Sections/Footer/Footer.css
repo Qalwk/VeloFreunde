@@ -1,0 +1,38 @@
+.Footer {
+    margin-top: 250px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    background-color: #111111;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Footer-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+.Footer-wrap-GEO {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.Footer-wrap-NUM {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.Footer-p {
+    color: white;
+    margin: 0;
+}

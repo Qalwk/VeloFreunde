@@ -1,0 +1,42 @@
+.VeloCard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 580px;
+    height: 742px;
+    background-color: #0F0F0F;
+    border-radius: 25px;
+    padding: 35px;
+    justify-content: space-between;
+}
+
+.VeloCard-p {
+    width: 510px;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+.VeloCard-wrapper-img {
+    position: absolute;
+    padding-top: 70px;
+}
+
+.VeloCard-img {
+    width: 500px;
+    height: 500px;
+}
+
+.VeloCard-wrap-price {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.VeloCard-price {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}

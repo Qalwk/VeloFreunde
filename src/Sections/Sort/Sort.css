@@ -10,14 +10,23 @@
 .Sort-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px 0;   /* Расстояние между колонками */
+    gap: 15px 10px;   /* Расстояние между колонками */
 }
-
-/* .be {
-    width: calc(100% / 3 - 20px);
-} */
 
 .Sort-btn {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1850px) {
+    .Sort-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .Sort {
+        margin-top: 90px;
+        gap: 60px;
+    }
 }

@@ -1,13 +1,12 @@
 import "./Info.css"
-import IMG from "../../assets/Two/Group 247.png"
+import IMG from "../../assets/Two/Group 2.png"
 
 const Info = () => {
   return (
-    <div className="Info" >
-        <div className="Info-img">
-            <img src={IMG} alt="" />
-        </div>
-        
+    <div className="Info">
+      <div className="Info-img">
+          <img className="img" src={IMG} alt="Photo" />
+      </div>
       <div className="Info-wrap">
         <h1 className="Info-h1">Beschreibung des Geschäfts</h1>
         <h2 className="Info-h2">VeloShop ist ein Online-Shop, der sich auf den Verkauf hochwertiger Fahrräder für 

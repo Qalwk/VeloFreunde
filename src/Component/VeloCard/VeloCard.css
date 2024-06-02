@@ -1,9 +1,10 @@
+
 .VeloCard {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 580px;
+    width: auto;
     height: 742px;
     background-color: #0F0F0F;
     border-radius: 25px;
@@ -11,21 +12,25 @@
     justify-content: space-between;
 }
 
+.VeloCard-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
 .VeloCard-p {
-    width: 510px;
     color: white;
     font-size: 30px;
     margin: 0;
 }
 
 .VeloCard-wrapper-img {
-    position: absolute;
-    padding-top: 70px;
 }
 
 .VeloCard-img {
-    width: 500px;
-    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .VeloCard-wrap-price {
@@ -39,4 +44,46 @@
     color: white;
     font-size: 30px;
     margin: 0;
+}
+
+@media (max-width: 1850px) {
+    .VeloCard {
+        height: 700px;
+    }
+    .VeloCard-wrapper-img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 1690px) {
+    .VeloCard {
+        height: 650px;
+    }
+    .VeloCard-wrapper-img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .VeloCard-p {
+        font-size: 22px;
+    }
+    .VeloCard-price {
+        font-size: 22px;
+    }
+    .VeloCard {
+        height: 450px;
+    }
+    .VeloCard-wrapper-img {
+        width: 80%;
+        height: 80%;
+    }
+    .VeloCard-wrap {
+        gap: 10px;
+    }
+    .VeloCard-wrap-price {
+        gap: 10px;
+    }
 }

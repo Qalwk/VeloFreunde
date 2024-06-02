@@ -1,10 +1,12 @@
 .HeroCard {
-    width: 890px;
-    height: 980px;
+    width: 100%;
+    height: 100%;
 }
 
 .HeroCard-back {
-
+    width: auto;
+    height: auto ;
+    z-index: -5;
 }
 
 .HeroCard-btn {
@@ -27,4 +29,19 @@
     font-size: 25px;
     font-weight: 300;
     color: white;
+}
+
+@media (max-width: 1500px) {
+    .HeroCard-title{
+        gap: 18px;
+        left: 305px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .HeroCard-title{
+        gap: 18px;
+        left: 130px;
+        bottom: 200px;
+    }
 }

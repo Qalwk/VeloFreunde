@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 :root {
@@ -21,4 +22,20 @@ h2 {
   font-size: 45px;
   font-weight: 400;
   margin: 0;
+}
+
+/* p, a {
+  font-size: 25px;
+  color: white;
+  margin: 0;
+} */
+
+@media (min-width: 1024px) and (max-width: 1430px) {
+  h1 {
+    font-size: 45px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
 }

@@ -15,13 +15,13 @@ const Footer = () => {
             <div>
                 <img src={Icon} alt="" />
             </div>
-            <p className="Footer-p">Office / Lager: Ziegelstr. 2 10117 Berlin</p>
+            <p className="Footer-p-geo">Office / Lager: Ziegelstr. 2 10117 Berlin</p>
         </div>
         <div className="Footer-wrap-NUM">
             <img src={Icon4} alt="Icon" />
             <div>
-                <p className="Footer-p">Tel.: +49 30 40790404</p>
-                <p className="Footer-p">Mob.: +49 179 5500504</p>
+                <p className="Footer-p-NUM">Tel.: +49 30 40790404</p>
+                <p className="Footer-p-NUM">Mob.: +49 179 5500504</p>
             </div>
         </div>
       </div>

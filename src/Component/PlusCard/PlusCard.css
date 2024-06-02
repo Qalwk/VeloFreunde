@@ -1,17 +1,15 @@
 
-
-
 .PlusCard {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     border-radius: 25px;
     padding: 30px;
-    height: 320px;
-    width: 870px;
     background-color: #0F0F0F;
     gap: 40px;
 }
+
+
 
 .PlusCard-wrap {
     display: flex;
@@ -21,7 +19,45 @@
 }
 
 .PlusCard-p {
+    width: 710px;
     color: white;
     font-size: 30px;
     margin: 0;
+}
+
+.PlusCard-icon {
+
+}
+
+@media (min-width: 1441px) and (max-width: 1700px) {
+    .PlusCard {
+        padding: 25px;
+        gap: 20px;
+    }
+    .PlusCard-wrap {
+        gap: 20px;
+    }
+    .PlusCard-p {
+        width: 600px;
+    }
+    .PlusCard-icon {
+        width: 60px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .PlusCard {
+        padding: 25px;
+        gap: 20px;
+    }
+    .PlusCard-wrap {
+        gap: 20px;
+    }
+    .PlusCard-p {
+        width: 385px;
+        font-size: 22px;
+    }
+    .PlusCard-icon {
+        width: 60px;
+    }
 }

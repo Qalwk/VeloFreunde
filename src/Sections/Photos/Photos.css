@@ -5,11 +5,16 @@
     margin-top: 110px;
     margin-left: 70px;
     margin-right: 70px;
-    gap: 0px;
 }
 
 .Photo {
     width: 100%;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .Photos {
+        margin-top: 90px;
+    }
 }
 
 /* .Photo1 {

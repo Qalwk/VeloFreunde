@@ -15,7 +15,6 @@
     background-color: black;
     color: white;
     cursor: pointer;
-    
 }
 
 .btn-text {
@@ -31,4 +30,16 @@
 
 .text-black {
     color: black;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .btn {
+        width: 200px;
+        height: 70px;
+    }
+    .btn-text {
+        font-size: 18px;
+        margin: 0;
+    }
 }

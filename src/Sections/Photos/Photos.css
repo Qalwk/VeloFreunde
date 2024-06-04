@@ -7,15 +7,36 @@
     margin-right: 70px;
 }
 
+.Photo2{
+    display: none ;
+}
+
 .Photo {
     width: 100%;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 600px) and (max-width: 1440px) {
     .Photos {
         margin-top: 90px;
     }
 }
+
+@media (min-width: 360px) and (max-width: 600px) {
+    .Photos {
+        margin-top: 60px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .Photo2{
+        display: flex;
+        width: 100%;
+    }
+    
+    .Photo {
+        display: none ;
+    }
+}
+
 
 /* .Photo1 {
     width: 700px;

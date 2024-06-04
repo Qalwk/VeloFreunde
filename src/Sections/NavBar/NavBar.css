@@ -6,7 +6,7 @@
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 70px;
-    gap: 70px;
+    margin-right: 70px;
     z-index: 10;
 }
 
@@ -27,4 +27,88 @@
 .navbar-logo {
     width: 303px;
     height: 43px;
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+    .navbar {
+        gap: 70px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .navbar-menu {
+        display: none;
+    }
+        
+    .navbar {
+        width: auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+        
+    .navbar-logo {
+        width: 200px;
+        height: 30px;
+    }
+        
+    .hamburger-menu {
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+        
+    .hamburger-menu span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+        
+    .navbar-menu.active {
+        display: flex;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+.navbar-menu {
+    display: none;
+}
+    
+.navbar {
+    width: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 70px;
+    gap: 100%;
+}
+    
+.navbar-logo {
+    width: 200px;
+    height: 30px;
+}
+    
+.hamburger-menu {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+    
+.hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+    
+.navbar-menu.active {
+    display: flex;
+}
 }

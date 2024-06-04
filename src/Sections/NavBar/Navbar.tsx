@@ -1,11 +1,18 @@
 import "./NavBar.css"
 import Logo from "../../assets/Logo.svg"
+import { useState } from "react";
 
 interface NavLink {
   label: string;
 }
 
 const Navbar: React.FC = () => {
+  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const navLinks: NavLink[] = [
     { label: 'About' },
@@ -15,8 +22,8 @@ const Navbar: React.FC = () => {
   
   return (
     <div className='navbar'>
-      <div className="navbar-logo">
-        <img src={Logo} alt="Logo" />
+      <div>
+        <img className="navbar-logo" src={Logo} alt="Logo" />
       </div>
       <div className='navbar-menu'>
         <ul className='navbar-menu-list'>
@@ -26,6 +33,11 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   )

@@ -30,3 +30,23 @@
         gap: 60px;
     }
 }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+    .Sort {
+        margin-top: 90px;
+        gap: 60px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 799px) {
+    .Sort-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Sort {
+        margin-top: 60px;
+        gap: 25px;
+        margin-left: 35px;
+        margin-right: 35px;
+        align-items: center;
+    }
+}

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="Footer">
       <div>
-        <img src={Logo} alt="Logo" />
+        <img className="Logo" src={Logo} alt="Logo" />
       </div>
       <div className="Footer-wrap">
         <a className="Footer-p" href="#" >AGB</a>

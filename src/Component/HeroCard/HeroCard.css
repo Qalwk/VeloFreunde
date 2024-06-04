@@ -1,3 +1,9 @@
+.Line {
+    width: 2px;
+    height: 61px;
+    background-color: white;
+}
+
 .HeroCard {
     width: 100%;
     height: 100%;
@@ -43,5 +49,36 @@
         gap: 18px;
         left: 130px;
         bottom: 200px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .HeroCard-title{
+        gap: 18px;
+        left: 245px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+    .Line{
+        height: 34px;
+    }
+    .HeroCard-title{
+        gap: 8px;
+        left: 90px;
+        bottom: 60px;
+    }
+    .HeroCard-back {
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .HeroCard-back img {
+        width: 100%;
+        height: 100%;
+    }
+    .HeroCard-title-text {
+        font-size: 14px;
+        width: 170px;
     }
 }

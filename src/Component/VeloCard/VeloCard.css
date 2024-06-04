@@ -87,3 +87,50 @@
         gap: 10px;
     }
 }
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .VeloCard-p {
+        font-size: 22px;
+    }
+    .VeloCard-price {
+        font-size: 22px;
+    }
+    .VeloCard {
+        height: auto;
+    }
+    .VeloCard-wrapper-img {
+        width: 75%;
+        height: 75%;
+    }
+    .VeloCard-wrap {
+        gap: 0px;
+    }
+    .VeloCard-wrap-price {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+    .VeloCard {
+        padding: 20px;
+    }
+    .VeloCard-p {
+        font-size: 14px;
+    }
+    .VeloCard-price {
+        font-size: 14px;
+    }
+    .VeloCard {
+        height: auto;
+    }
+    .VeloCard-wrapper-img {
+        width: 75%;
+        height: 75%;
+    }
+    .VeloCard-wrap {
+        gap: 0px;
+    }
+    .VeloCard-wrap-price {
+        gap: 10px;
+    }
+}

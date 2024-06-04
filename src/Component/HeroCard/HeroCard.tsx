@@ -9,7 +9,7 @@ const HeroCard = () => {
         <Button Mode={false} Text="BUY" />
       </div>
       <div className="HeroCard-title">
-        <div style={{ width: "2px", height: "61px", backgroundColor: "white" }}></div>
+        <div className="Line"></div>
         <p className="HeroCard-title-text">CUBE NUROAD Race FE <br></br> Gravel Bike - 2023</p>
       </div>
       <div className="HeroCard-back">

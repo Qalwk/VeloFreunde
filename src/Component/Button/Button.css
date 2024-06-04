@@ -43,3 +43,27 @@
         margin: 0;
     }
 }
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .btn {
+        width: 180px;
+        height: 70px;
+    }
+    .btn-text {
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+
+    .btn {
+        width: 120px;
+        height: 36px;
+        border-radius: 15px 0px;
+    }
+    .btn-text {
+        font-size: 14px;
+        margin: 0;
+    }
+}

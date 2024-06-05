@@ -5,7 +5,7 @@ import Sort from './Sections/Sort/Sort'
 import Plus from './Sections/Plus/Plus'
 import Photos from './Sections/Photos/Photos'
 import Footer from './Sections/Footer/Footer'
-import { BrowserRouter, Router, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   // const navLinks = [

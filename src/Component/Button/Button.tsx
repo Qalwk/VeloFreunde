@@ -6,10 +6,10 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({Mode=true, Text}) => {
+const Button: React.FC<ButtonProps> = ({Mode=true, Text, onClick}) => {
 
   return (
-    <div>
+    <div onClick={onClick}>
       {
         Mode 
         ? (

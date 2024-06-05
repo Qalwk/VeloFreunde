@@ -14,10 +14,12 @@
 }
 
 .hero-h1 {
+
 }
 
 .hero-h2 {
     width: 603px;
+
 }
 
 .hero-card {
@@ -85,7 +87,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 600px) {
     .hero-h1 {
         text-align: center;
     }

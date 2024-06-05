@@ -47,8 +47,8 @@
 @media (min-width: 1024px) and (max-width: 1500px) {
     .HeroCard-title{
         gap: 18px;
-        left: 130px;
-        bottom: 200px;
+        left: 230px;
+        bottom: 120px;
     }
 }
 
@@ -59,7 +59,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 600px) {
     .Line{
         height: 34px;
     }

@@ -55,7 +55,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 600px) {
+@media (min-width: 340px) and (max-width: 600px) {
 
     .btn {
         width: 120px;

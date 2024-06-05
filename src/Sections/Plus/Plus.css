@@ -39,7 +39,7 @@
 }
 
 
-@media (min-width: 375px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 600px) {
     .Plus-list {
         display: grid;
         grid-template-columns: repeat(1, 1fr);

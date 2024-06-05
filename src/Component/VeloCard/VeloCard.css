@@ -20,7 +20,9 @@
 }
 
 .VeloCard-p {
-    color: white;
+    background: linear-gradient(to right, #FFFFFF 0, #999999 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 30px;
     margin: 0;
 }

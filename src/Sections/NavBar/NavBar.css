@@ -1,4 +1,7 @@
 .navbar {
+    margin: 0 auto;
+    width: calc(100% - 14rem);
+    max-width: 1920px;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -41,7 +44,7 @@
     }
         
     .navbar {
-        width: auto;
+        width: calc(100% - 10rem);
         justify-content: space-between;
         display: flex;
         flex-direction: row;
@@ -80,13 +83,13 @@
 }
     
 .navbar {
-    width: auto;
+    width: calc(100% - 4rem);
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 70px;
-    gap: 100%;
+    margin-left: 35px;
+    margin-right: 35px;
 }
     
 .navbar-logo {

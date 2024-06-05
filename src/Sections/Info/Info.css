@@ -38,7 +38,9 @@
 
 .Info-p {
     margin: 0;
-    color: white;
+    background: linear-gradient(to right, #FFFFFF 0, #999999 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 30px;
 }
 
@@ -57,16 +59,17 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1250px) and (max-width: 1500px) {
+    
     .Info {
         margin-top: 90px;
         margin-left: 70px;
         margin-right: 70px;
     }
     
-    .Info-h2 {
+    /* .Info-h2 {
         width: 485px;
-    }
+    } */
     
     .Info-p {
         margin: 0;
@@ -79,7 +82,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1250px) {
     .Info {
     display: flex;
     flex-direction: column-reverse;
@@ -99,8 +102,8 @@
     
     }
     .Info-img {
-        width: 90%;
-        height: 90%;
+        width: 70%;
+        height: 70%;
     }
     .Info-h2 {
         width: auto;

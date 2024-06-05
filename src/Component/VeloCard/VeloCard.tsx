@@ -2,9 +2,10 @@ import "./VeloCard.css"
 import Button from '../Button/Button'
 
 interface VeloCardProps {
-    Text: string;
-    Img: string;
-    Price: string;
+    Text: any;
+    Img: any;
+    Price: any;
+    key: any;
   }
 
 const VeloCard: React.FC<VeloCardProps> = ({ Text, Img, Price }) => {

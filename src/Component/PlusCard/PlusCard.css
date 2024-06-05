@@ -18,7 +18,9 @@
 
 .PlusCard-p {
     width: 710px;
-    color: white;
+    background: linear-gradient(to right, #FFFFFF 0, #999999 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 30px;
     margin: 0;
 }
@@ -60,7 +62,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 1023px) {
+@media (min-width: 360px) and (max-width: 1023px) {
     .PlusCard {
         box-sizing: border-box;
         border-radius: 15px;

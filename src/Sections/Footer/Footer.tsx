@@ -2,15 +2,39 @@ import "./Footer.css"
 import Logo from "../../assets/Logo.svg"
 import Icon from "../../assets/Footer/Icon.svg"
 import Icon4 from "../../assets/Footer/4. Круг, обводка, большая.svg"
+import AGB from "../../Component/AGB/AGB"
+import { useState } from "react"
 
 const Footer = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+
   return (
     <div className="Footer">
       <div>
         <img className="Logo" src={Logo} alt="Logo" />
       </div>
       <div className="Footer-wrap">
-        <a className="Footer-p" href="#" >AGB</a>
+        <a className="Footer-p" href="#" onClick={toggleModal} >AGB</a>
+
+        {isModalOpen && (
+        <div className="Modal-wrapper">
+          <div className="Modal">
+            <div className="Modal-close-button" onClick={toggleModal}>
+              X
+            </div>
+            <div className="Modal-Comp">
+              <AGB />
+            </div>
+          </div>
+        </div>
+      )}
+
         <div className="Footer-wrap-GEO">
             <div>
                 <img src={Icon} alt="" />

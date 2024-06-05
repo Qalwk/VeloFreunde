@@ -1,7 +1,6 @@
 import "./Hero.css"
 import Button from '../../Component/Button/Button'
 import HeroCard from "../../Component/HeroCard/HeroCard"
-import { useRef } from "react";
 
 const Hero: React.FC = () => {
   

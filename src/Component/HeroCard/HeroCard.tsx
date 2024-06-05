@@ -6,7 +6,7 @@ const HeroCard = () => {
   return (
     <div className="HeroCard">
       <div className="HeroCard-btn">
-        <Button Mode={false} Text="BUY" />
+        <Button Mode={false} Text="BUY" onClick={() => window.location.hash = "#info-section"} />
       </div>
       <div className="HeroCard-title">
         <div className="Line"></div>

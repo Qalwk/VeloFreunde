@@ -1,9 +1,13 @@
 import "./Info.css"
 import IMG from "../../assets/Two/Group 2.png"
 
-const Info = () => {
+interface InfoProps {
+  id?: string;
+}
+
+const Info: React.FC<InfoProps> = () => {
   return (
-    <div className="Info">
+    <div className="Info" id="#info-section">
       <div className="Info-img">
           <img className="img" src={IMG} alt="Photo" />
       </div>

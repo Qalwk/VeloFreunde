@@ -5,9 +5,13 @@ import Icon3 from "../../assets/Four/Category-2.svg"
 import Icon4 from "../../assets/Four/Category-3.svg"
 import "./Plus.css"
 
-const Plus = () => {
+interface PlusProps {
+  id?: string;
+}
+
+const Plus: React.FC<PlusProps> = () => {
   return (
-    <div className="Plus">
+    <div className="Plus" id="#plus-section">
         <div>
             <h1 className="Plus-h1">Vorteile des Geschäfts</h1>
         </div>

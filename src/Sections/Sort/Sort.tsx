@@ -17,10 +17,13 @@ import FOCUS2 from "../../assets/Three/FOCUS ATLAS 6-7 GRX Gravel Bike.png"
 import CUBE3 from "../../assets/Three/CUBE NUROAD C-62 SLT.png"
 import FOCUS3 from "../../assets/Three/FOCUS ATLAS 6-7 EQP GRX Gravel Bike.png"
 import FOCUS4 from "../../assets/Three/FOCUS ATLAS 6-8.png"
-
 import "./Sort.css"
 
-const Sort = () => {
+interface SortProps {
+  id?: string;
+}
+
+const Sort: React.FC<SortProps> = () => {
 
   const bikes = [
     {
@@ -96,24 +99,25 @@ const Sort = () => {
       Img: FOCUS4,
       Price: "2.299,00",
     },
-    
   ];
   
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="Sort">
+    <div className="Sort" id="#sort-section">
         <h1>Sortiment</h1>
         <div className="Sort-wrapper">
           {bikes.slice(0, 6).map((bike) => (
             <VeloCard key={bike.Text} {...bike} />
           ))}
-          {showMore && bikes.slice(3).map((bike) => (
+          {showMore && bikes.slice(6).map((bike) => (
             <VeloCard key={bike.Text} {...bike} />
           ))}
         </div>
         <div className="Sort-btn">
+        {!showMore && 
           <Button Text="MORE" onClick={() => {setShowMore(true)}}/>
+        }
         </div>
     </div>
   )

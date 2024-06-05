@@ -5,18 +5,25 @@ import Sort from './Sections/Sort/Sort'
 import Plus from './Sections/Plus/Plus'
 import Photos from './Sections/Photos/Photos'
 import Footer from './Sections/Footer/Footer'
+import { BrowserRouter, Router, Route } from 'react-router-dom';
 
 const App = () => {
+  // const navLinks = [
+  //   { label: 'About' },
+  //   { label: 'Sortiment' },
+  //   { label: 'Vorteile' }
+  // ];
+
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
       <Hero />
-      <Info />
-      <Sort />
-      <Plus />
+      <Info id="info-section" />
+      <Sort id="sort-section"/>
+      <Plus id="plus-section"/>
       <Photos />
       <Footer />
-    </div>
+    </BrowserRouter>
   )
 }
 

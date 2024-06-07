@@ -50,11 +50,12 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
       </div>
-      <div className="hamburger-menu" onClick={toggleMenu}>
+      {/* <div className="hamburger-menu" onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </div> */}
+      <div className="navbar-background"></div>
     </div>
   )
 }

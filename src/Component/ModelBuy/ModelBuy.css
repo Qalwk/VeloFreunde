@@ -1,0 +1,113 @@
+.ModelBuy {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.ModelBuy_h1 {
+    text-wrap: wrap;
+    width: auto;
+}
+
+.ModelBuy_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ModelBuy_wrap-buy {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.ModelBuy_p {
+    margin: 0;
+}
+
+.ModelBuy_wrap-buy-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.ModelBuy_wrap-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .ModelBuy_p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .ModelBuy_wrap-buy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .ModelBuy_wrap-buy-price {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+    .ModelBuy_wrap-buy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .ModelBuy_wrap-buy-price {
+        gap: 20px;
+    }
+
+    .ModelBuy_wrap-info {
+        gap: 20px;
+    }
+    
+}
+
+  @media (min-width: 450px) and (max-width: 700px) {
+    h1 {
+      font-size: 26px;
+    }
+    
+    h2 {
+      font-size: 18px;
+    }
+    p {
+        width: auto;
+      font-size: 14px;
+    }
+}
+
+
+    .ModelBuy {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .ModelBuy_wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .ModelBuy_wrap-buy {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }

@@ -4,7 +4,7 @@ interface ButtonProps {
   Text: string;
   Mode?: boolean;
   onClick?: () => void;
-  buttonProps?: any;
+  buttonProps?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({Mode=true, Text, onClick}) => {

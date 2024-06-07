@@ -1,6 +1,6 @@
 import "./VeloCard.css"
 import Button from '../Button/Button'
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import ModelBuy from "../ModelBuy/ModelBuy";
 
 interface VeloCardProps {

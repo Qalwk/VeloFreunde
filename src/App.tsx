@@ -8,11 +8,6 @@ import Footer from './Sections/Footer/Footer'
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
-  // const navLinks = [
-  //   { label: 'About' },
-  //   { label: 'Sortiment' },
-  //   { label: 'Vorteile' }
-  // ];
 
   return (
     <BrowserRouter>

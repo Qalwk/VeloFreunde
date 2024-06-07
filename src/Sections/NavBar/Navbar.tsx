@@ -1,6 +1,5 @@
 import "./NavBar.css"
 import Logo from "../../assets/Logo.svg"
-import { useState } from "react";
 
 interface NavLink {
   label: string;
@@ -19,12 +18,6 @@ const Navbar: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
   };
 
   const navLinks: NavLink[] = [

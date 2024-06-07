@@ -12,7 +12,7 @@ interface VeloCardProps {
     Description: string;
     setVeloType: Dispatch<SetStateAction<number>>;
     veloType: number;
-    Photo1?: any;
+    Photo1: string;
     Photo2?: string;
     Photo3?: string;
     Photo4?: string;

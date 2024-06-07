@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   
   interface handleClickScrolProps {
     id?: string;
-    navLink?: any;
+    navLink: string;
   }
 
   const handleClickScrol = ({ navLink }: handleClickScrolProps) => {

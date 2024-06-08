@@ -39,6 +39,37 @@
     gap: 50px;
 }
 
+.ModelBuy {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ModelBuy_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ModelBuy_wrap-buy {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.ModelBuy-order {
+    box-sizing: border-box;
+    
+    position: fixed;
+    width: 40vw;
+    height: 30vh;
+    z-index: 100;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 10%;
+}
+
 @media (min-width: 1024px) and (max-width: 1440px) {
 
     .ModelBuy_p {
@@ -57,6 +88,18 @@
 
     .ModelBuy_wrap-buy-price {
         gap: 20px;
+    }
+
+    .ModelBuy-order {
+        box-sizing: border-box;
+    
+        position: fixed;
+        width: 60vw;
+        height: 30vh;
+        z-index: 100;
+        left: 50%;
+        transform:translateX(-50%);
+        top: 10%;
     }
 }
 
@@ -77,6 +120,17 @@
         gap: 20px;
     }
     
+    .ModelBuy-order {
+        box-sizing: border-box;
+    
+        position: fixed;
+        width: 60vw;
+        height: 30vh;
+        z-index: 100;
+        left: 50%;
+        transform:translateX(-50%);
+        top: 10%;
+    }
 }
 
   @media (min-width: 450px) and (max-width: 700px) {
@@ -94,20 +148,14 @@
 }
 
 
-    .ModelBuy {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+
+
+    /* .Blur-eff {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+        z-index: 100;
+    } */
+
     
-    .ModelBuy_wrap {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .ModelBuy_wrap-buy {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }

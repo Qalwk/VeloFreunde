@@ -1,0 +1,90 @@
+.Order {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 40px;
+    padding-top: 40px;
+    align-items: center;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.Modal-close-button {
+
+}
+
+.Modal-close-button {
+    padding-top: 10px;
+}
+
+.Order-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.Order-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Order-wrap input {
+    width: 418px;
+    height: 80px;
+    padding-left: 30px;
+    border-radius: 30px;
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+    .Order-wrap input {
+        width: 250px;
+        height: 60px;
+        padding-left: 30px;
+        border-radius: 30px;
+    }
+
+    .Order {
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .Order-wrap input {
+        width: 180px;
+        height: 45px;
+        padding-left: 30px;
+        border-radius: 30px;
+    }
+
+    .Order {
+        gap: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .Order-title{
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .Order-wrap input {
+        width: 130px;
+        height: 35px;
+        padding-left: 30px;
+        border-radius: 30px;
+    }
+
+    .Order {
+        gap: 20px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .Order-title{
+        font-size: 32px;
+    }
+  }

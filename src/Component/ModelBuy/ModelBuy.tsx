@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Button from "../Button/Button";
 import Slider from "../Slider/Slider";
 import "./ModelBuy.css"
+import Order from "../Order/Order";
 
 interface ModelBuyProps {
     Text: string;
@@ -11,6 +13,12 @@ interface ModelBuyProps {
 
 const ModelBuy: React.FC<ModelBuyProps> = ({Text, Price, Description, images}) => {
 
+const [isOrderOpen, setIsOrderOpen] = useState(false)
+
+const handleOrderOpen = () => {
+  setIsOrderOpen(!isOrderOpen); 
+};
+
 return (
     <div className='ModelBuy'>
       <h1 className="ModelBuy_h1" >{Text}</h1>
@@ -19,7 +27,7 @@ return (
             <Slider images={images} />
             <div className="ModelBuy_wrap-buy-price">
                 <h1>{Price}  €</h1>
-                <Button Text="BERATUNG" />
+                <Button Text="BERATUNG" onClick={handleOrderOpen} />
             </div>
         </div>
         <div className="ModelBuy_wrap-info">
@@ -27,6 +35,15 @@ return (
             <p className="ModelBuy_p" style={{whiteSpace: "pre-wrap"}}>{Description}</p>
         </div>
       </div>
+      {
+        isOrderOpen &&
+        <div className="Blur-eff">
+          <div className="ModelBuy-order">
+              <Order setIsOrderOpen={setIsOrderOpen} />
+          </div>
+        </div> 
+      }
+
     </div>
   )
 }

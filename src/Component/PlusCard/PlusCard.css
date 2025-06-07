@@ -62,7 +62,7 @@
     }
 }
 
-@media (min-width: 360px) and (max-width: 1023px) {
+@media (min-width: 360px) and (max-width: 1024px) {
     .PlusCard {
         box-sizing: border-box;
         border-radius: 15px;

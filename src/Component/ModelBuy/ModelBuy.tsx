@@ -19,6 +19,31 @@ const handleOrderOpen = () => {
   setIsOrderOpen(!isOrderOpen); 
 };
 
+const handleConsultationSubmit = async (data: { vorname: string; nachname: string; mail: string }) => {
+  const { vorname, nachname, mail } = data;
+  const bikeName = Text; // Get the bike name from the Text prop
+
+  try {
+    const response = await fetch("http://localhost:8080/php/send_consultation.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ vorname, nachname, mail, bikeName }),
+    });
+
+    const result = await response.json();
+    if (result.status === "success") {
+      alert("Ваша заявка на консультацию успешно отправлена!");
+    } else {
+      alert("Ошибка при отправке заявки: " + result.message);
+    }
+  } catch (error) {
+    console.error("Ошибка при отправке формы: ", error);
+    alert("Произошла ошибка сети. Пожалуйста, попробуйте еще раз.");
+  }
+};
+
 return (
     <div className='ModelBuy'>
       <h1 className="ModelBuy_h1" >{Text}</h1>
@@ -39,7 +64,7 @@ return (
         isOrderOpen &&
         <div className="Blur-eff">
           <div className="ModelBuy-order">
-              <Order setIsOrderOpen={setIsOrderOpen} />
+              <Order setIsOrderOpen={setIsOrderOpen} onConsultationSubmit={handleConsultationSubmit} />
           </div>
         </div> 
       }

@@ -13,7 +13,7 @@ const Sort: React.FC<SortProps> = () => {
   const [veloType, setVeloType] = useState<number>(0);
 
   useEffect(() => {
-    fetch("http://localhost:8080/products.php")
+    fetch("http://localhost:8080/php/products.php")
       .then((res) => res.json())
       .then((data) => setBikes(data));
   }, []);

@@ -5,21 +5,16 @@ import ModelBuy from "../ModelBuy/ModelBuy";
 
 interface VeloCardProps {
     Text: string;
-    Img: string;
     Price: string;
     key: string;
     id: number;
     Description: string;
     setVeloType: Dispatch<SetStateAction<number>>;
     veloType: number;
-    Photo1: string;
-    Photo2?: string;
-    Photo3?: string;
-    Photo4?: string;
+    images: string[];
   }
 
-const VeloCard: React.FC<VeloCardProps> = ({ Text, Img, Price, id, Description, Photo1, 
-                                          Photo2, Photo3, Photo4, veloType, setVeloType }) => {
+const VeloCard: React.FC<VeloCardProps> = ({ Text, Price, id, Description, images, veloType, setVeloType }) => {
 
   const Types = (id:number) => {
     console.log(id, veloType);
@@ -31,7 +26,7 @@ const VeloCard: React.FC<VeloCardProps> = ({ Text, Img, Price, id, Description, 
       <p className='VeloCard-p'>{Text}</p>
       <div className="VeloCard-wrap">
         <div className='VeloCard-wrapper-img'>
-          <img className='VeloCard-img' src={Img} alt="IMG" />
+          <img className='VeloCard-img' src={images[0]} alt="IMG" />
         </div>
         <div className="VeloCard-wrap-price">
           <p className='VeloCard-price'>{Price} €</p>
@@ -47,8 +42,7 @@ const VeloCard: React.FC<VeloCardProps> = ({ Text, Img, Price, id, Description, 
                 X
               </div>
               <div className="Modal-Comp">
-                <ModelBuy Text={Text} Price={Price} Img={Img} Description={Description} 
-                Photo1={Photo1} Photo2={Photo2} Photo3={Photo3} Photo4={Photo4} />
+                <ModelBuy Text={Text} Price={Price} images={images} Description={Description} />
               </div>
             </div>
           </div>

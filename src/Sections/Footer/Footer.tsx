@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div className="Footer-wrap">
         <a className="Footer-p" href="#" onClick={toggleModal} >AGB</a>
-
+        
         {isModalOpen && (
         <div className="Modal-wrapper">
           <div className="Modal">

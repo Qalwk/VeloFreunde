@@ -4,23 +4,19 @@ import "./ModelBuy.css"
 
 interface ModelBuyProps {
     Text: string;
-    Img: string;
     Price: string;
     Description: string;
-    Photo1: string;
-    Photo2?: string;
-    Photo3?: string;
-    Photo4?: string;
+    images: string[];
   }
 
-const ModelBuy: React.FC<ModelBuyProps> = ({Text, Img, Price, Description, Photo1, Photo2, Photo3, Photo4}) => {
+const ModelBuy: React.FC<ModelBuyProps> = ({Text, Price, Description, images}) => {
 
 return (
     <div className='ModelBuy'>
       <h1 className="ModelBuy_h1" >{Text}</h1>
       <div className='ModelBuy_wrap'>
         <div className="ModelBuy_wrap-buy">
-            <Slider Img={Img} Photo1={Photo1} Photo2={Photo2} Photo3={Photo3} Photo4={Photo4} />
+            <Slider images={images} />
             <div className="ModelBuy_wrap-buy-price">
                 <h1>{Price}  €</h1>
                 <Button Text="BERATUNG" />
